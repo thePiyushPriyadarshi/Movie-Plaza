@@ -11,7 +11,7 @@ const MovieSummary = () => {
    <div className='flex flex-col items-center w-11/12 max-w-[1260px] gap-10 mx-auto pb-20'>
    <h3 className='text-3xl font-semibold text-slate-900'>{movie.show.name}</h3>
    <img src={movie.show.image.original} className='w-[500px]' alt="" />
-   <div className='flex justify-between w-[500px]'>
+   <div className='flex justify-between lg:w-[500px] w-11/12'>
     <p className='text-xl'>Language : <span className='text-blue-600 font-medium'>{movie.show.language}</span> </p>
     {
       movie.show.rating.average &&
