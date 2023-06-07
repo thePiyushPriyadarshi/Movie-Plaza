@@ -22,7 +22,10 @@ const MovieSummary = () => {
         <div className='lg:w-[50%] mx-auto'>
           <h6 className='text-xl font-semibold py-1'>SUMMARY</h6>  
           <div className='text-justify'>{HTMLReactParser(movie?.show?.summary)}</div> 
-           <button  onClick={()=>clickHandler(movie?.show?.id)} className='w-full mt-10 rounded-md px-4 py-2 border border-red-700 hover:scale-95 hover:bg-red-700 hover:text-white transition-all duration-200'> Book Show</button>
+          <div className='flex gap-3'>
+          <button  onClick={()=>navigate('/')} className='w-full mt-10 rounded-md px-4 py-2 border border-red-700 hover:scale-95 hover:bg-red-700 hover:text-white transition-all duration-200'> Back </button>
+          <button  onClick={()=>clickHandler(movie?.show?.id)} className='w-full mt-10 rounded-md px-4 py-2 border border-red-700 hover:scale-95 hover:bg-red-700 hover:text-white transition-all duration-200'> Book Show</button>
+          </div>
         </div> 
    </div>
    </div>
